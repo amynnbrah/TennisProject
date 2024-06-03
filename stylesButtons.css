@@ -73,8 +73,13 @@
   /* LIVE Style */
   #live-tennis {
     margin-top: 20px;
+    padding: 50px 20px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100%; /* Full viewport height */
+    text-align: center; /* Center text if needed */
+    
   }
   
   .video-container {

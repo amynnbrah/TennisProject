@@ -9,13 +9,21 @@ li {
   margin: 0;
   padding: 0;
 }
+* {
+  box-sizing: border-box; /* Ensure padding and borders are included in width and height */
+}
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
 /* Global Styles */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f3f8f6;
-  color: #333;
+  color: #000000;
 }
 
 
@@ -27,7 +35,7 @@ body {
   background-position: center;
   text-align: center;
   padding: 200px 0;
-  color: #fff;
+  color: #ffffff;
 }
 
 .hero h2 {
@@ -43,7 +51,7 @@ body {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #7eb3c7;
+  background-color: #0f530f;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -54,8 +62,13 @@ body {
 }
 
 /* Services Section Styles */
-.services {
-  padding: 50px 0; /* Add padding top and bottom */
+#tournaments {
+
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center text if needed */
 }
 
 .services h2 {
@@ -70,14 +83,14 @@ body {
 }
 
 .service-item {
-  width: 25%; /* Each service takes up one-quarter of the container */
+  width: 30%; /* Each service takes up one-quarter of the container */
   padding: 10px; /* Add some padding around each service */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
   text-align: center; /* Center-align text */
 }
 
 .service-item img {
-  width: 100%; /* Make sure images fill the width of their container */
+  width: 80%; /* Make sure images fill the width of their container */
   height: auto; /* Maintain aspect ratio */
   max-height: 230px;
 }
@@ -140,22 +153,29 @@ body {
 
 /* Footer Styles */
 footer {
-  background-color: #7eb3c7;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
   text-align: center;
   padding: 20px 0;
 }
 
 /* Portfolio Section Styles */
-.portfolio {
-  padding: 50px 0;
+.Portfolio {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center text if needed */
+
 }
 
 .slide-container {
   position: relative;
   overflow: hidden;
-  margin: 0 auto;
+  margin: auto auto;
   max-width: 1200px; /* Ensure it matches your container width */
+  padding: 10px 10px;
 }
 
 .slides {
@@ -286,14 +306,26 @@ footer {
 }
 
 /* Rankings Table Styles */
-#Rankings-content {
+#Rankings  {
   margin-top: 20px;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100%; /* Full viewport height */
+  text-align: center; /* Center text if needed */
+  
 }
-
+#maleRankingsTable , #femaleRankingsTable {
+  display: flex;
+  flex-direction: column; /* Ensures containers are stacked vertically */
+  gap: 20px; /* Adds space between each container */
+}
 table {
-  width: 100%;
+  width: 40%;
   border-collapse: collapse;
   margin-top: 20px;
+  
 }
 
 th,
@@ -389,29 +421,6 @@ tr:hover {
 
 
 
-/* live red dot*/
-nav ul li .live-indicator {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 5px; /* Adjust as needed */
-    box-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
-    animation: glow 1s infinite alternate;
-}
-
-@keyframes glow {
-    from {
-        box-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
-    }
-    to {
-        box-shadow: 0 0 20px rgba(255, 0, 0, 1);
-    }
-}
 
 /* Newsletter Section Styles */
 .newsletter {
@@ -447,7 +456,7 @@ nav ul li .live-indicator {
     padding: 10px 20px;
     font-size: 16px;
     color: #fff;
-    background-color: #7eb3c7;
+    background-color: #0f530f;
     border: none;
     border-radius: 5px;
     cursor: pointer;
