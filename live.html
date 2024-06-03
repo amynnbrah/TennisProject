@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tenninist</title>
+  <title>Tenninis Tournament</title>
+  <link rel="icon" type="image/png" href="./sources/logo.png"> 
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="stylesButtons.css">
-
+  <link rel="stylesheet" href="header.css">
   <script src="script.js"></script>
 
 </head>
@@ -16,22 +17,34 @@
 <body>
   <!-- Header -->
   <header>
-    <div class="container">
-        <img src="./sources/logo.png" alt="Website Logo">
-      <h1>Tennis Tournament</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html#home">Home</a></li>
-          <li><a href="index.html#tournaments">Tournaments</a></li>
-          <li><a href="index.html#Tennis Peeks">Tennis Peeks</a></li>
-          <li><a href="index.html#Rankings">Rankings</a></li>
-          <li><a href="#Sponsors">Sponsors</a></li>
-        </ul>
-      </nav>
+    <div class="headerContainer">
+           
+        <div class="dropdown">
+            <img src="./sources/logo.png" alt="Website Logo">
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="index.html#tournaments">Tournaments</a></li>
+                    <li><a href="index.html#Tennis Peeks">Tennis Peeks</a></li>
+                    <li><a href="index.html#Rankings">Rankings</a></li>
+                    <li><a href="#Sponsors">Sponsors</a></li>
+                </ul>
+            </div>
+        </div>
+        <h1>Tennis Tournament</h1>
+        <input type="text" id="searchInput" placeholder="Search player">
+
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="./live.html">Watch Live Tennis</a><span class="live-indicator"></span></li>
+            </ul>
+        </nav>
+ 
     </div>
-
+    
+   
   </header>
-
   <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="container">

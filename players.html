@@ -7,10 +7,11 @@
   <title>Tenninis Tournament</title>
   <link rel="icon" type="image/png" href="./sources/logo.png"> 
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="players.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="stylesButtons.css">
   <link rel="stylesheet" href="header.css">
-  <script src="script.js"></script>
+  <script src="players.js"></script>
 
 </head>
 
@@ -45,135 +46,15 @@
     
    
   </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="container">
-      <h2>Welcome To Your Favorite Tennis Website</h2>
-      <p>Your premier destination for professional Tournaments.</p>
-      <a href="#tournaments" class="btn">Explore Upcoming Tournaments</a>
+<!--players section-->
+    <div class="playerContainer">
+        <h1>Players</h1>
+    <input type="text" id="searchInput" placeholder="Search players..."><button id="searchInput" type="button">Search</button>
+    <div id="playerList">
+        <!-- Player items will be dynamically added here -->
     </div>
-  </section>
-
-  <!-- Tournaments -->
- <section id="tournaments" class="tournaments">
-  <div class="container">
-    <h2>Tournaments</h2>
-    <div class="service-slider">
-      <div class="service-item">
-       <a href="https://en.wikipedia.org/wiki/Australian_Open"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Australian_Open_Logo_2017.svg/180px-Australian_Open_Logo_2017.svg.png" alt="Service 1">
-         </a> <h3>Australian Open</h3>
-        <div class="countdown">
-          <h2>Countdown Timer</h2>
-          <div class="timer" id="timer1">
-            <div>
-              <span class="days">00</span>
-              <div class="time-label">Days</div>
-            </div>
-            <div>
-              <span class="hours">00</span>
-              <div class="time-label">Hours</div>
-            </div>
-            <div>
-              <span class="minutes">00</span>
-              <div class="time-label">Minutes</div>
-            </div>
-            <div>
-              <span class="seconds">00</span>
-              <div class="time-label">Seconds</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="service-item">
-       <a href="https://en.wikipedia.org/wiki/Wimbledon_Championships">  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Wimbledon.svg/150px-Wimbledon.svg.png" alt="Service 2">
-       </a>  <h3>Wimbledon</h3> 
-        <div class="countdown">
-          <h2>Countdown Timer</h2>
-          <div class="timer" id="timer2">
-            <div>
-              <span class="days">00</span>
-              <div class="time-label">Days</div>
-            </div>
-            <div>
-              <span class="hours">00</span>
-              <div class="time-label">Hours</div>
-            </div>
-            <div>
-              <span class="minutes">00</span>
-              <div class="time-label">Minutes</div>
-            </div>
-            <div>
-              <span class="seconds">00</span>
-              <div class="time-label">Seconds</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="service-item">
-     <a href="https://en.wikipedia.org/wiki/French_Open">    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Logo_Roland-Garros.svg/1200px-Logo_Roland-Garros.svg.png" alt="Service 3">
-     </a>  <h3>Roland Garros</h3> 
-        <div class="countdown">
-          <h2>Countdown Timer</h2>
-          <div class="timer" id="timer3">
-            <div>
-              <span class="days">00</span>
-              <div class="time-label">Days</div>
-            </div>
-            <div>
-              <span class="hours">00</span>
-              <div class="time-label">Hours</div>
-            </div>
-            <div>
-              <span class="minutes">00</span>
-              <div class="time-label">Minutes</div>
-            </div>
-            <div>
-              <span class="seconds">00</span>
-              <div class="time-label">Seconds</div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-</section>
-
-  <!-- Tennis Peeks Section -->
-  <section id="Tennis Peeks" class="Tennis Peeks">
-    <div class="container">
-      <h2>Tennis Peeks</h2>
-      <div class="slide-container">
-        <div class="slides">
-          <div class="slide">
-            <img src="https://thumbor.bigedition.com/roger-federer/TxZo3OwieFMpgKs7GLKDd_-uH7Y=/800x0/filters:quality(80)/granite-web-prod/12/e5/12e525bb97aa40d28aa3f1ca6fc6e066.jpeg" alt="Project 1">
-          </div>
-          <div class="slide">
-            <img src="https://thumbor.bigedition.com/andre-agassi/O-eVWahlQo-Bxv0SSvdpSaXpohE=/742x0/filters:quality(80)/granite-web-prod/9c/fb/9cfb1bd5c78f4cdcabf4b0d92977ff01.jpeg" alt="Project 2">
-          </div>
-          <div class="slide">
-            <img src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_lg/f_auto/primary/szlvok3sejhejfayyixh" alt="Project 3">
-          </div>
-           <div class="slide">
-            <img src="https://i.ytimg.com/vi/TazFZSgy_iU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAfvl2reNYPcaqxXSe3nQfZxxGjig" alt="Project 3">
-          </div>
-           <div class="slide">
-            <img src="https://cdn.zeebiz.com/sites/default/files/2023/07/03/249406-fz9nljkwwaawl9n.jpg?im=FitAndFill=(1200,900)" alt="Project 3">
-          </div>
-           <div class="slide">
-            <img src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/QVMET6MJLVO4PLNQ7H6A3QSVGY.jpg" alt="Project 3">
-          </div>
-        </div>
-        <div class="navigation">
-          <button class="prev">&lt;</button>
-          <button class="next">&gt;</button>
-        </div>
-        <div class="dots-container"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Rankings Us Section -->
+      <!-- Rankings Section -->
   <section id="Rankings" class="Rankings">
     <div class="container">
       <h2>Rankings</h2>
@@ -896,45 +777,32 @@
 
       </div>
   </section>
-
-  <!-- Sponsors Section -->
-  <section id="Sponsors" class="Sponsors">
-    <div class="sponsors">
-  <div class="container">
-    <h2>Our Sponsors</h2>
-    <div class="sponsor-logos">
-      <!-- Dummy logos -->
-      <div class="sponsor-logo"><img src="https://1000logos.net/wp-content/uploads/2021/04/Puma-logo.png" alt="Sponsor 1"></div>
-      <div class="sponsor-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pepsi_2023.svg/1200px-Pepsi_2023.svg.png" alt="Sponsor 2"></div>
-      <div class="sponsor-logo"><img src="https://1000logos.net/wp-content/uploads/2020/09/Wilson-Logo.png" alt="Sponsor 3"></div>
-      <div class="sponsor-logo"><img src="https://www.hatchwise.com/wp-content/uploads/2022/01/Monster-Energy-Symbol-1024x576.png" alt="Sponsor 4"></div>
-      <div class="sponsor-logo"><img src="https://static.toiimg.com/thumb/msid-106616095,width-400,resizemode-4/106616095.jpg" alt="Sponsor 5"></div>
-      <div class="sponsor-logo"><img src="https://t3.ftcdn.net/jpg/04/74/05/94/360_F_474059464_qldYuzxaUWEwNTtYBJ44VN89ARuFktHW.jpg" alt="Sponsor 6"></div>
-      <div class="sponsor-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" alt="Sponsor 7"></div>
-      <div class="sponsor-logo"><img src="https://cdn.mos.cms.futurecdn.net/786NzPhpXo6G8hkutJkHTM-1200-80.jpg" alt="Sponsor 8"></div>
-      <div class="sponsor-logo"><img src="https://i.pinimg.com/originals/0b/fb/68/0bfb682d3a786c68ffd1c64213f99fe5.png" alt="Sponsor 9"></div>
-      <div class="sponsor-logo"><img src="https://i.pinimg.com/originals/1e/c1/d2/1ec1d2ce366d1f603b1bde70ae508063.png" alt="Sponsor 10"></div>
+    <!-- Sponsors Section -->
+    <section id="Sponsors" class="Sponsors">
+        <div class="sponsors">
+      <div class="container">
+        <h2>Our Sponsors</h2>
+        <div class="sponsor-logos">
+          <!-- Dummy logos -->
+          <div class="sponsor-logo"><img src="https://1000logos.net/wp-content/uploads/2021/04/Puma-logo.png" alt="Sponsor 1"></div>
+          <div class="sponsor-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pepsi_2023.svg/1200px-Pepsi_2023.svg.png" alt="Sponsor 2"></div>
+          <div class="sponsor-logo"><img src="https://1000logos.net/wp-content/uploads/2020/09/Wilson-Logo.png" alt="Sponsor 3"></div>
+          <div class="sponsor-logo"><img src="https://www.hatchwise.com/wp-content/uploads/2022/01/Monster-Energy-Symbol-1024x576.png" alt="Sponsor 4"></div>
+          <div class="sponsor-logo"><img src="https://static.toiimg.com/thumb/msid-106616095,width-400,resizemode-4/106616095.jpg" alt="Sponsor 5"></div>
+          <div class="sponsor-logo"><img src="https://t3.ftcdn.net/jpg/04/74/05/94/360_F_474059464_qldYuzxaUWEwNTtYBJ44VN89ARuFktHW.jpg" alt="Sponsor 6"></div>
+          <div class="sponsor-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" alt="Sponsor 7"></div>
+          <div class="sponsor-logo"><img src="https://cdn.mos.cms.futurecdn.net/786NzPhpXo6G8hkutJkHTM-1200-80.jpg" alt="Sponsor 8"></div>
+          <div class="sponsor-logo"><img src="https://i.pinimg.com/originals/0b/fb/68/0bfb682d3a786c68ffd1c64213f99fe5.png" alt="Sponsor 9"></div>
+          <div class="sponsor-logo"><img src="https://i.pinimg.com/originals/1e/c1/d2/1ec1d2ce366d1f603b1bde70ae508063.png" alt="Sponsor 10"></div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
-  </section>
-  <!-- NewsLetter -->
-  <section id="newsletter" class="newsletter">
-    <div class="container">
-      <h2>Subscribe to Our Newsletter</h2>
-      <form id="newsletter-form">
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        <button type="submit" class="btn">Subscribe</button>
-      </form>
-    </div>
-  </section>
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; Tennis Tournament Website Made By Badreddine</p>
-    </div>
-  </footer>
+    
+      </section>
+    <footer>
+        <div class="container">
+          <p>&copy; Tennis Tournament Website Made By Badreddine</p>
+        </div>
+      </footer>
 </body>
-
 </html>
