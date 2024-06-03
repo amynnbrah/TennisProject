@@ -1,0 +1,107 @@
+/* Button Style */
+#Rankings button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Male Rankings Button */
+  #maleButton {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  #maleButton:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Female Rankings Button */
+  #femaleButton {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  #femaleButton:hover {
+    background-color: #27ae60;
+  }
+  
+  /* Hide Rankings Button */
+  #hideButton {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  #hideButton:hover {
+    background-color: #c0392b;
+  }
+
+
+  /* Comments Button Style */
+#toggle-comments {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #toggle-comments:hover {
+    background-color: #2980b9;
+  }
+  
+  #toggle-comments.clicked {
+    background-color: #e74c3c;
+  }
+  
+  #toggle-comments.clicked:hover {
+    background-color: #c0392b;
+  }
+  
+  
+  /* LIVE Style */
+  #live-tennis {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .video-container {
+    width: 100%;
+  }
+  
+  .comments-container {
+    width: 0;
+    overflow: hidden;
+    transition: width 0.5s ease;
+    background-color: #f5f5f5; /* Light gray background for comments */
+  }
+  
+  #live-tennis.show-comments .video-container {
+    width: 70%; /* When comments are shown, reduce the width of the live stream */
+  }
+  
+  #live-tennis.show-comments .comments-container {
+    width: 30%; /* When comments are shown, expand the width of the comments */
+  }
+  
+  #comments {
+    padding: 20px; /* Add some padding to the comments */
+  }
+  
+  iframe {
+    width: 100%; /* Make sure the iframe fills its container */
+    border: none; /* Remove border for iframes */
+  }
+  
