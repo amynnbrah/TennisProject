@@ -83,7 +83,7 @@ nav ul li a:hover {
 
 /* Hero Section Styles */
 .hero {
-  background-image: url("https://www.itftennis.com/media/6938/pzfeature-21us-h20.jpg?anchor=center&mode=crop&width=1440&height=703&rnd=132786125930000000"); /* Replace 'hero-image.jpg' with your actual hero image */
+  background-image: url("./sources/hero.jpg"); 
   background-size: cover;
   background-position: center;
   text-align: center;
