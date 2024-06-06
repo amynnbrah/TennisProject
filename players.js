@@ -10,8 +10,8 @@ const players = [
         info: "Tunisian professional tennis player known for being the first Arab woman to win a WTA singles title. In 2021, she became the first Arab tennis player to reach the top 10 in either ATP or WTA rankings history. Her tennis fame has led her to accumulate more than 1.3 million followers on Instagram, where she posts primarily career-oriented content. ",
         socialMedia: {
             FamousBirthday: "https://www.famousbirthdays.com/people/ons-jabeur.html",
-            facebook: "https://www.instagram.com/carlitosalcarazz",
-            instagram: "https://www.instagram.com/carlitosalcarazz"
+            facebook: "https://www.instagram.com/Ons.Jabeur",
+            instagram: "https://www.instagram.com/onjabeur"
         }
     },
     {
@@ -20,8 +20,8 @@ const players = [
         info: "Tennis player who was the youngest participant in the males singles division of the 2021 Australian Open. He lost in the second round to Mikael Ymer. Also in 2021, he was the youngest winner in the history of the Madrid Open. He played Wimbledon 2021 as well and lost in the second round. He defeated Stefanos Tsitsipas at the US Open, which was a major upset given that Tsitsipas was ranked as the No. 3 world player by the ATP. His carlitosalcarazz Instagram account documents his professional achievements and competitions, amassing 4.6 million followers. ",
         socialMedia: {
             FamousBirthday: "https://www.famousbirthdays.com/people/carlos-alcaraz.html",
-            facebook: "https://www.facebook.com/Ons.Jabeur",
-            instagram: "https://www.instagram.com/onsjabeur"
+            facebook: "https://www.facebook.com/carlitosalcarazz",
+            instagram: "https://www.instagram.com/carlitosalcarazz"
         }
     },  {
         name: "RAFAEL NADAL",
@@ -124,14 +124,24 @@ const players = [
 function renderPlayers() {
     const playerList = document.getElementById("playerList");
     playerList.innerHTML = ""; // Clear previous list
- 
+
     players.forEach(player => {
         const playerItem = document.createElement("div");
         playerItem.classList.add("player");
 
+        // Creating an anchor element for the player's Instagram profile
+        const playerInstagramLink = document.createElement("a");
+        playerInstagramLink.href = player.socialMedia.instagram;
+
+        // Creating the player image element
         const playerImg = document.createElement("img");
         playerImg.src = player.image;
-        playerItem.appendChild(playerImg);
+        
+        // Appending the player image to the Instagram anchor element
+        playerInstagramLink.appendChild(playerImg);
+        
+        // Appending the Instagram anchor element to the player item
+        playerItem.appendChild(playerInstagramLink);
 
         const playerInfo = document.createElement("div");
         playerInfo.classList.add("player-info");
@@ -158,7 +168,6 @@ function renderPlayers() {
         playerList.appendChild(playerItem);
     });
 }
-
 // Function to filter players based on search input
 function filterPlayers() {
     const searchInput = document.getElementById("searchInput").value.toLowerCase();
