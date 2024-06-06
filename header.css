@@ -10,6 +10,7 @@ header {
   z-index: 999;
   transform: scaleY(0.9);
   top: -2%;
+ 
 }
 
 .headerContainer {
@@ -23,18 +24,20 @@ header {
 .dropdown {
   position: relative;
   display: inline-block;
-  z-index: 25;
+  z-index: 2;
 }
 
 .dropdown img {
-  height: 50px;
+  height: 92.5px; /* 50px * 1.85 to make the image 1.85 times larger */
   cursor: pointer; /* Add pointer cursor to indicate clickable */
+  transform: translateX(-40px); /* Move the image to the left by 20px */
 }
 
 .dropdown-content {
   display: none;
-  position: fixed; /* or absolute */
+  position: static; /* or absolute */
   background-color: #ffffff;
+  min-width: 160px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   padding: 12px 16px;
   z-index: 9999; /* Set a high z-index value */
@@ -64,7 +67,10 @@ header {
   color: #333333;
   font-size: 14px;
 }
-
+.dropdown-content ul li a:hover {
+  background-color: #0f530f; 
+  color: #ffffff;
+}
 h1 {
   font-size: 24px;
   color: #333333;
