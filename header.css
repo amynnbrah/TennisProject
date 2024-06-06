@@ -72,7 +72,10 @@ a img {
   background-color: #0f530f; /* Dark green background color */
   color: #ffffff; /* White text color for better readability */
 }
-
+input::placeholder {
+  color: white; /* Change this to any color you prefer */
+  opacity: 1; /* Ensure the placeholder color is fully opaque */
+}
 nav ul {
   list-style: none;
   padding: 0;

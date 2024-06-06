@@ -166,26 +166,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-//live script
-
-document.addEventListener('DOMContentLoaded', () => {
-  const toggleCommentsButton = document.getElementById('toggle-comments');
-  const commentsContainer = document.getElementById('comments');
-  const videoContainer = document.querySelector('.video-container');
-
-  toggleCommentsButton.addEventListener('click', () => {
-      if (commentsContainer.style.display === 'none' || commentsContainer.style.display === '') {
-          commentsContainer.style.display = 'block';
-          videoContainer.style.width = '60%';
-          toggleCommentsButton.textContent = 'Hide Comments';
-      } else {
-          commentsContainer.style.display = 'none';
-          videoContainer.style.width = '100%';
-          toggleCommentsButton.textContent = 'Show Comments';
-      }
-  });
-});
-
 
 //newsletter
 
