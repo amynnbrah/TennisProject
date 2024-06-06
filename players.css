@@ -17,6 +17,10 @@
     margin-right: 20px;
     float: left;
 }
+.player img:hover {
+    border:solid;
+    border-color: green;
+}
 
 .player-info {
     overflow: hidden; /* Clear floats */
