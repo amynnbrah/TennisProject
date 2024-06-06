@@ -489,3 +489,11 @@ tr:hover {
     font-style: normal;
   }
   
+
+  /* teskra */
+
+  #teskra:hover {
+    background-color: rgb(172, 172, 255);
+    border: solid 1px ;
+    border-color: palevioletred;
+  }

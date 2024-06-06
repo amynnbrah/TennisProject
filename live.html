@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tenninis Tournament</title>
+  <title>Tennis Tournament</title>
   <link rel="icon" type="image/png" href="./sources/logo.png"> 
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="live.css">
   <script src="live.js"></script>
   <script src="script.js"></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
 
 </head>
 
@@ -33,9 +36,9 @@
             </div>
         </div>
         <h1>Tennis Tournament</h1>
-        <a href="https://teskerti.tn/"><img src="./sources/teskerti.png" alt="Teskerti"></a> 
+        <a href="https://teskerti.tn/"><img src="./sources/teskerti.png" id="teskra" alt="Teskerti"></a> 
         <input type="text" id="searchInput" placeholder="Search Look up players, games, stats...etc">
-
+        <div id="google_translate_element"></div>
         <nav>
             <ul>
                 <li><a href="index.html#home">Home</a></li>
@@ -52,8 +55,8 @@
   <section id="home" class="hero">
     <div class="container">
       <h2>Welcome To Your Favorite Tennis Website</h2>
-      <p>Your premier destination for professional Tournaments.</p>
-      <a href="#tournaments" class="btn">Explore Upcoming Tournaments</a>
+      <p>You Can Watch Live Tournaments On Our Website.</p>
+      <a href="#live-tennis" class="btn">Watch Live Tournaments</a>
     </div>
   </section>
  <!-- Live Section-->
@@ -73,6 +76,7 @@
 
   <section id="Sponsors" class="Sponsors">
     <div class="sponsors">
+
   <div class="container">
     <h2>Our Sponsors</h2>
     <div class="sponsor-logos">
@@ -91,6 +95,22 @@
   </div>
 </div>
 
+  </section>
+
+  <section id="contact-us">
+    <h2>Contact Us</h2>
+    <div class="contact-item">
+      <i class="fas fa-phone"></i>
+      <a href="tel:+1234567890">+1 234 567 890</a>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <a href="baddour:info@example.com">info@example.com</a>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <address>123 Souter Vyle, City, Country</address>
+    </div>
   </section>
   <footer>
     <div class="container">
